@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="Images/ai-generated-8165297_1280.jpg" class="active" alt="Image 1" onclick="openLightbox(0)">
+            <img src="Images/banking-system.webp" alt="Image 2" onclick="openLightbox(1)">
+            <img src="Images/bloghero.webp" alt="Image 3" onclick="openLightbox(2)">
+            <img src="Images/tech1.jpg" alt="Image 3" onclick="openLightbox(3)">
+            <img src="Images/tech2.jpg" alt="Image 3" onclick="openLightbox(4)">
+            <img src="Images/tech4.jpg" alt="Image 3" onclick="openLightbox(5)">
+            <img src="Images/tech5.jpg" alt="Image 3" onclick="openLightbox(6)">
+            <img src="Images/tech6.jpg" alt="Image 3" onclick="openLightbox(7)">
+            <img src="Images/tech7.jpg" alt="Image 3" onclick="openLightbox(8)">
+        </div>
+        <div class="thumbnails">
+            <img src="Images/ai-generated-8165297_1280.jpg" onclick="selectImage(0)">
+            <img src="Images/banking-system.webp" onclick="selectImage(1)">
+            <img src="Images/bloghero.webp" onclick="selectImage(2)">
+            <img src="Images/tech1.jpg" onclick="selectImage(3)">
+            <img src="Images/tech2.jpg" onclick="selectImage(4)">
+            <img src="Images/tech4.jpg" onclick="selectImage(5)">
+            <img src="Images/tech5.jpg" onclick="selectImage(6)">
+            <img src="Images/tech6.jpg" onclick="selectImage(7)">
+            <img src="Images/tech7.jpg" onclick="selectImage(8)">
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
